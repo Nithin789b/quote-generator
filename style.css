@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: purple;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #0084ff;
+    border-radius: 5px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+#heading {
+    margin-bottom: 20px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+#quote {
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.fa-quote-left {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.fa-quote-right {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+#author {
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+#getquote {
+    background-color: white;
+    color: black;
+    width: 200px;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 20px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+    .container {
+        width: 70%;
+        padding: 25px 35px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 80%;
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+        padding: 10px 20px;
+    }
+
+    #quote {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #getquote {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
