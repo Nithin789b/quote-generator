@@ -6,7 +6,7 @@ let quoteEle = document.getElementById("quote");
 
         async function quoteAPI() {
             try {
-                let response = await fetch("https://api.quotable.io/random");
+                let response = await fetch("https://zenquotes.io/api/random");
                 
                 
                 let quote = await response.json();
